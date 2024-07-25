@@ -4,9 +4,10 @@ on:
     - cron: '0 */6 * * *' # 每6个小时运行一次
     workflow_dispatch:
 jobs:
-  update-submodules:
+  main:
     runs-on: ubuntu-latest
-
+    permissions:
+        contents: write
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
