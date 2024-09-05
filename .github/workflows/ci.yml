@@ -1,7 +1,7 @@
 name: CI
 on:
     schedule:
-    - cron: '0 */6 * * *' # 每6个小时运行一次
+    - cron: '0 */8 * * *' # 每8个小时运行一次
     workflow_dispatch:
 jobs:
   main:
